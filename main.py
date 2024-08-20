@@ -1,11 +1,8 @@
-# это комментарий 
-
-#this
-#is
-#comment
-
-# This
-# is
-# comment
-
-print(10)  #This is inline comment
+def hello(name):
+    print("Привет друг", name)
+    print("Привет подруга", name)
+    
+print("Вне функции и вне ее тела")
+    
+hello("Женя")
+hello("Валя")
