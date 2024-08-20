@@ -1,2 +1,3 @@
-def print_name_function(name):
-    print(name)
+my_list =         [1, 2,    3    ]
+
+print( my_list)
