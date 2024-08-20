@@ -1,3 +1,11 @@
-my_list =         [1, 2,    3    ]
+# это комментарий 
 
-print( my_list)
+#this
+#is
+#comment
+
+# This
+# is
+# comment
+
+print(10)  #This is inline comment
