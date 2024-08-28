@@ -5,4 +5,3 @@ def hello(name):
 print("Вне функции и вне ее тела")
     
 hello("Женя")
-hello("Валя")
