@@ -1,7 +1,6 @@
-def hello(name):
-    print("Привет друг", name)
-    print("Привет подруга", name)
-    
-print("Вне функции и вне ее тела")
-    
-hello("Женя")
+def sum_nums (a, b):
+    sum = a + b
+    print(sum)
+
+
+sum_nums (10, 5)
