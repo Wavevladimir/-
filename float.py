@@ -9,3 +9,7 @@ temperature = float(str_temperature)
 
 print(temperature)
 print(type(temperature)) 
+
+rate = 0.78
+print(round(rate)) 
+print(type(round(rate))) 
