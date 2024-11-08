@@ -1,5 +1,5 @@
 my_cars = ['BMW', 'Audi']
-copied_cars = my_cars
+copied_cars = my_cars [:]
 
 copied_cars.append('Mercedes')
 print(copied_cars) 
