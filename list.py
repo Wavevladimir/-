@@ -18,3 +18,4 @@ print(posts_ids)
 user_inputs = [True, 'hi', 1259,]
 del user_inputs[1]
 print(user_inputs)
+
