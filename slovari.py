@@ -28,3 +28,9 @@ key_name = 'brand'
 
 other_mothobike[key_name] = 'BMW'
 print(other_mothobike)
+
+print(len(my_mothorbike))
+
+del my_mothorbike ['price']
+
+print(len(my_mothorbike))
