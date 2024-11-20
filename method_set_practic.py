@@ -16,3 +16,10 @@ my_set.add('t')
 copied_set.add('l')
 print(my_set)
 print(copied_set)
+
+#print(my_set & copied_set) пересечение наборов 
+
+a = {'v', 'n', 'k', 'w'}
+b = {'v', 'n', 'k', 'q'}
+
+print((a | b) - (a & b))
