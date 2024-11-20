@@ -22,4 +22,5 @@ print(copied_set)
 a = {'v', 'n', 'k', 'w'}
 b = {'v', 'n', 'k', 'q'}
 
-print((a | b) - (a & b))
+#print((a | b) - (a & b)) | юнион обьединение & пересечение 
+# либо эта форула для нахождения разницы либо symmetric_diference 
