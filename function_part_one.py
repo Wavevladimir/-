@@ -25,15 +25,29 @@
 #print(res)
 #print(num_one)
 
+#def increase_person_age(person):
+#    print(id(person))
+#    person['age'] += 1
+#    return person
+
+#person_one = {
+#    'name': 'Vova',
+#    'age': 27
+#}
+#print(id(person_one))
+#increase_person_age(person_one)
+#print(person_one)
+
 def increase_person_age(person):
-    print(id(person))
-    person['age'] += 1
-    return person
+    person_copy = person.copy()
+    person_copy['age'] =+ 1
+    return person_copy
 
 person_one = {
     'name': 'Vova',
     'age': 27
 }
-print(id(person_one))
-increase_person_age(person_one)
-print(person_one)
+
+new_person =increase_person_age(person_one)
+print(new_person['age'])
+print(person_one ['age'])
