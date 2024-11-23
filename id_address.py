@@ -59,8 +59,8 @@ info = {
     'student': True,
     'reviews': []
 }
-info_deepcopy = deepcopy(info)
-info_deepcopy['reviews'].append('Great course!')
+info_deep_shallow_copy = deepcopy(info)
+info_deep_shallow_copy['reviews'].append('Great course!')
 info['reviews'].append('Super')
 print(info)
-print(info_deepcopy)
+print(info_deep_shallow_copy)
