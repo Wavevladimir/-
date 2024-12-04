@@ -1,6 +1,8 @@
 try:
-    print(10 / 0)
-except ZeroDivisionError: 
-    print("Error - Division by zero!")
-    print(ZeroDivisionError)
+    print('10' / 0)
+except ZeroDivisionError as e: 
+    print(type(e))
+    print(e)
+except TypeError as e:
+    print(e)
 print('Continue...')
