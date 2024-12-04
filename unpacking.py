@@ -22,3 +22,13 @@ def user_info(name, comments_qty=0):
     return f"{name} has {comments_qty} comments"
 
 print(user_info(**user_profile))
+#print(user_info(user_profile['name'], ['comments_qty'])) результат тот же
+
+user_data = ['Alex', 23]
+
+def users_info(names, comm_qty):
+    if not comm_qty:
+        return f"{names} has no comments"
+    return f"{names} has {comm_qty} comments"
+
+print(users_info(*user_data))
