@@ -24,5 +24,6 @@ scores = {}
 
 for key, value in my_scores.items():
     scores[key] = value * 10
+#scores = {k: v * 10 for k, v in my_scores.items()}
 print(scores)
 print(my_scores)
