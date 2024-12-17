@@ -1,5 +1,6 @@
 def decoration_fuction(original_fn):
     def wrapper_fn():
+        print("Executed before function")
         result = original_fn()
 
         return result
