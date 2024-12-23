@@ -1,7 +1,7 @@
 def decoration_fuction(original_fn):
-    def wrapper_fn(a, b):
+    def wrapper_fn(*args, **kwargs):
         print("Executed before function")
-        result = original_fn(a, b)
+        result = original_fn(*args, **kwargs)
         print("Executed after function")
 
         return result

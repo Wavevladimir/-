@@ -1,4 +1,4 @@
-import module_practic_one as mod_one, my_fn
+import module_practic_one as mod_one
 # from module_practic_one import my_name, print_sum as sum
 # sum(5, 2)
 # print(my_name)
