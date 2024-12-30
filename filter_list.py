@@ -9,3 +9,5 @@ print(res)
 print(isinstance(True, bool))
 print(isinstance(True, int))
 print(isinstance(True, object))
+
+print(dir(list_to_filter))
