@@ -19,7 +19,11 @@ with open(files_dir_path / 'first.txt') as f:
     print(f.read())
 
 with open(files_dir_path / 'second.txt') as f:
-    print(f.read())
+    while True:
+        line = f.readlines()
+        if not line:
+            break
+        print(line)
 
 first_file = Path(files_dir_path / 'first.txt')
 second_file = Path(files_dir_path / 'second.txt')
