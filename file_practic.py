@@ -23,7 +23,7 @@ with open(files_dir_path / 'second.txt') as f:
         line = f.readlines()
         if not line:
             break
-        print(line)
+        print(line.strip())
 
 first_file = Path(files_dir_path / 'first.txt')
 second_file = Path(files_dir_path / 'second.txt')
