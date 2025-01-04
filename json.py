@@ -10,3 +10,5 @@ my_list = json.loads(json_array)
 json.dump(sneakers, indent=1)
 print(my_list)
 
+json_from_dict = json.dumps(sneakers, indent=1)
+print(json_from_dict)

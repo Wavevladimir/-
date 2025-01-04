@@ -7,5 +7,8 @@ my_dict = {
     },
     'd': (1, 2, 3)
 }
-converted_dict = json.dumps(my_dict)
+converted_dict = json.dumps(my_dict, indent=1)
 print(converted_dict)
+
+converted_json = json.loads(converted_dict)
+print(converted_json)
