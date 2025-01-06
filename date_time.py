@@ -15,7 +15,7 @@ print(my_time.hour)
 print(my_time.minute)
 print(my_time.second)
 
-from datetime import datetime
+from datetime import datetime, timedelta
 date_time = datetime(2025, 1, 5, 22, 36, 45)
 print(date_time)
 print(date_time.strftime("%d-%b-%Y %H:%M:%S"))
@@ -23,3 +23,6 @@ print(date_time.strftime("%d-%b-%Y %H:%M:%S"))
 date_str = '10/12/2025'
 converted_date = datetime.strptime(date_str, "%d/%m/%Y")
 print(converted_date)
+
+print(timedelta)
+print(date_time + timedelta(days=100, minutes=120))
