@@ -1,5 +1,3 @@
-import sys
-
 import pygame
 import sys
 
@@ -23,13 +21,13 @@ while True:
         if event.type == pygame.QUIT:
             sys.exit()
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_UP:
+            if event.key == pygame.K_UP and rect_y >= STEP:
                 rect_y -= STEP
-            if event.key == pygame.K_DOWN:
+            if event.key == pygame.K_DOWN and rect_y <= screen_height - rect_height - STEP:
                 rect_y += STEP
-            if event.key == pygame.K_LEFT:
+            if event.key == pygame.K_LEFT and rect_x >= STEP:
                 rect_x -= STEP
-            if event.key == pygame.K_RIGHT:
+            if event.key == pygame.K_RIGHT and rect_x <= screen_width - rect_height - STEP:
                 rect_x += STEP
 
     screen.fill(fill_color)
