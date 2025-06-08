@@ -15,6 +15,8 @@ fighter_width, fighter_heigh = fighter_image.get_size()
 fighter_x, fighter_y = screen_width / 2 - fighter_width / 2, screen_height - fighter_heigh
 fighter_is_moving_left, fighter_is_moving_right = False, False
 
+rocket_image = pygame.image.load('images/rocket.png')
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
