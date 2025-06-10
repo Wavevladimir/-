@@ -21,6 +21,8 @@ ball_width, ball_height = ball_image.get_size()
 ball_x, ball_y = fighter_x + fighter_width / 2 - ball_width / 2, fighter_y - ball_height
 ball_was_fired = False
 
+alien_image = pygame.image.load('images/alien.png')
+
 
 while True:
     for event in pygame.event.get():
