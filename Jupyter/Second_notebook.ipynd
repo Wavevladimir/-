@@ -1,0 +1,37 @@
+import os
+os
+<module 'os' (frozen)>
+os.environ
+environ{'TMPDIR': '/var/folders/f7/phn862ts7ql_7d5cy4r63xzr0000gn/T/',
+        '__CFBundleIdentifier': 'com.apple.Terminal',
+        'XPC_FLAGS': '0x0',
+        'LaunchInstanceID': 'A77FF9C6-FB5B-4AF2-8495-ED5DE2BBEBA3',
+        'TERM': 'xterm-color',
+        'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.sXgeR8mKy9/Listeners',
+        'SECURITYSESSIONID': '186b2',
+        'XPC_SERVICE_NAME': '0',
+        'TERM_PROGRAM': 'Apple_Terminal',
+        'TERM_PROGRAM_VERSION': '455',
+        'TERM_SESSION_ID': 'B1851F6D-4E42-4DB0-AC7A-A0A21C419787',
+        'SHELL': '/bin/zsh',
+        'HOME': '/Users/wavevladimir',
+        'LOGNAME': 'wavevladimir',
+        'USER': 'wavevladimir',
+        'PATH': '/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin',
+        'SHLVL': '1',
+        'PWD': '/Users/wavevladimir',
+        'OLDPWD': '/Users/wavevladimir',
+        'LANG': 'ru_RU.UTF-8',
+        '_': '/Library/Frameworks/Python.framework/Versions/3.12/bin/jupyter',
+        '__CF_USER_TEXT_ENCODING': '0x1F5:0x7:0x31',
+        'JPY_SESSION_NAME': '/Users/wavevladimir/Desktop/notebooks/Jupyter/Untitled.ipynb',
+        'JPY_PARENT_PID': '71129',
+        'PYDEVD_USE_FRAME_EVAL': 'NO',
+        'CLICOLOR': '1',
+        'FORCE_COLOR': '1',
+        'CLICOLOR_FORCE': '1',
+        'PAGER': 'cat',
+        'GIT_PAGER': 'cat',
+        'MPLBACKEND': 'module://matplotlib_inline.backend_inline'}
+print
+<function print(*args, sep=' ', end='\n', file=None, flush=False)>
