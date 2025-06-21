@@ -11,9 +11,9 @@ world = 'World'
 greeting = f"{hello} {world}"
 print(greeting)
 
-my_name = 'Vova'
-my_hobby = 'running'
-time = 8
+my_name = 'Nastya'
+my_hobby = 'sleeping'
+time = 12
 
 #info = my_name + ' likes ' + my_hobby + ' at' + str(time) + ' o\'clock'
 info = f"{my_name} likes {my_hobby} at {str(time)} o\'clock"

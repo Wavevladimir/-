@@ -27,6 +27,6 @@ else:
     info = "Incorrect image formatting"
 print(info)
 
-my_str = "very, very, very, very, very, vere, very, very, very, vere, very, very, very, vere, very, very, very, very, very, very,very, verye, very, very,very, verye, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long string"
-res = "String is long" if len(my_str) > 79 else "String is short"
+my_str = "very, very, very,very, verye, very, very,very, verye, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long string"
+res = "String is long" if len(my_str) > 1000000 else "String is short"
 print(res)
