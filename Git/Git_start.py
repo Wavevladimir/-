@@ -249,3 +249,66 @@ wavevladimir@MacBook-Air-Vladimir my-project % git status
 On branch main
 nothing to commit, working tree clean
 wavevladimir@MacBook-Air-Vladimir my-project % 
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit bb303b80052e7e3265da94836061f87b19236be0 (HEAD -> main)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:48:47 2025 +0300
+
+    Second commit
+
+commit a537d89b626484d3bab80d62493021e85d5df205
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:25:33 2025 +0300
+
+    First commit
+wavevladimir@MacBook-Air-Vladimir my-project % git checkout a537d89b62
+Note: switching to 'a537d89b62'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a537d89 First commit
+wavevladimir@MacBook-Air-Vladimir my-project % ls
+first-file.txt	first-subfolder
+wavevladimir@MacBook-Air-Vladimir my-project % git status
+HEAD detached at a537d89
+nothing to commit, working tree clean
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit a537d89b626484d3bab80d62493021e85d5df205 (HEAD)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:25:33 2025 +0300
+
+    First commit
+wavevladimir@MacBook-Air-Vladimir my-project % git checkout main
+Previous HEAD position was a537d89 First commit
+Switched to branch 'main'
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit bb303b80052e7e3265da94836061f87b19236be0 (HEAD -> main)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:48:47 2025 +0300
+
+    Second commit
+
+commit a537d89b626484d3bab80d62493021e85d5df205
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:25:33 2025 +0300
+
+    First commit
+wavevladimir@MacBook-Air-Vladimir my-project % ls
+first-subfolder		second-subfolder
+wavevladimir@MacBook-Air-Vladimir my-project % git status
+On branch main
+nothing to commit, working tree clean
+wavevladimir@MacBook-Air-Vladimir my-project % 
