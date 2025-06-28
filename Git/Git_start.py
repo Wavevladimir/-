@@ -3,8 +3,11 @@ git config --list
 git config --global user.email vikirov43@mail.ru 
 
 git init создание нового git репозитория
-git branch -m <name> изменить название корневой ветки
-
+git branch -m <new branch name> изменить название текущей ветки
+git checkout <branch name> переход в другую ветку
+git checkout -b <branch name> создание новой ветки и переход в нее 
+git branch отображает список всех веток
+git branch -d <branch name> удаление ветки(текущую ветку удалить нельзя)
 ls -la вводим данную команду в папке в которой инициализировали гит репозиторий и 
 видим скрытую папуц гит
 cd .git переходим в эту папку
