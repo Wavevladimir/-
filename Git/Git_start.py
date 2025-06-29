@@ -6,8 +6,10 @@ git init создание нового git репозитория
 git branch -m <new branch name> изменить название текущей ветки
 git checkout <branch name> переход в другую ветку
 git checkout -b <branch name> создание новой ветки и переход в нее 
+code . находясь в терминале с помощью этой команды откроется VS code
 git branch отображает список всех веток
 git branch -d <branch name> удаление ветки(текущую ветку удалить нельзя)
+git merge -m <комментарии для мердж коммита> <название другой ветки> слияние другой ветки в текущую
 ls -la вводим данную команду в папке в которой инициализировали гит репозиторий и 
 видим скрытую папуц гит
 cd .git переходим в эту папку
@@ -315,3 +317,202 @@ wavevladimir@MacBook-Air-Vladimir my-project % git status
 On branch main
 nothing to commit, working tree clean
 wavevladimir@MacBook-Air-Vladimir my-project % 
+wavevladimir@MacBook-Air-Vladimir my-project % git branch
+* another-feature
+  main
+  new-feature
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit bb303b80052e7e3265da94836061f87b19236be0 (HEAD -> another-feature, new-feature, main)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:48:47 2025 +0300
+
+    Second commit
+
+commit a537d89b626484d3bab80d62493021e85d5df205
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:25:33 2025 +0300
+
+    First commit
+wavevladimir@MacBook-Air-Vladimir my-project % git branch -d another-feature
+error: Cannot delete branch 'another-feature' checked out at '/Users/wavevladimir/Desktop/my-project'
+wavevladimir@MacBook-Air-Vladimir my-project % git branch -d new-feature
+Deleted branch new-feature (was bb303b8).
+wavevladimir@MacBook-Air-Vladimir my-project % git checkout main
+Switched to branch 'main'
+wavevladimir@MacBook-Air-Vladimir my-project % git branch -d another-feature
+Deleted branch another-feature (was bb303b8).
+wavevladimir@MacBook-Air-Vladimir my-project % git branch
+* main
+wavevladimir@MacBook-Air-Vladimir my-project % 
+ First commit
+wavevladimir@MacBook-Air-Vladimir my-project % git commit -m "New file in the feature branch"
+[new-feature 86de970] New file in the feature branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature-file.txt
+wavevladimir@MacBook-Air-Vladimir my-project % git status
+On branch new-feature
+nothing to commit, working tree clean
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit 86de9703912473510d8689fb7a550c9b98b57986 (HEAD -> new-feature)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 18:51:25 2025 +0300
+
+    New file in the feature branch
+
+commit bb303b80052e7e3265da94836061f87b19236be0 (main)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:48:47 2025 +0300
+
+    Second commit
+
+commit a537d89b626484d3bab80d62493021e85d5df205
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:25:33 2025 +0300
+
+    First commit
+wavevladimir@MacBook-Air-Vladimir my-project % git status
+On branch new-feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   second-subfolder/fourth-file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+wavevladimir@MacBook-Air-Vladimir my-project % git status
+On branch new-feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   second-subfolder/fourth-file.txt
+
+wavevladimir@MacBook-Air-Vladimir my-project % git status
+On branch new-feature
+nothing to commit, working tree clean
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit 558d43247a54e106c8ffbe41d6a3b43cca31fa8b (HEAD -> new-feature)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:07:00 2025 +0300
+
+    Modified in the feature branch
+
+commit 86de9703912473510d8689fb7a550c9b98b57986
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 18:51:25 2025 +0300
+
+    New file in the feature branch
+
+commit bb303b80052e7e3265da94836061f87b19236be0 (main)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:48:47 2025 +0300
+
+    Second commit
+
+commit a537d89b626484d3bab80d62493021e85d5df205
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:25:33 2025 +0300
+
+    First commit
+wavevladimir@MacBook-Air-Vladimir my-project % git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   first-subfolder/second-file.txt
+	modified:   first-subfolder/third-file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	first-subfolder/sixth-file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+wavevladimir@MacBook-Air-Vladimir my-project % git ststaus
+git: 'ststaus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit 7768aed83c6f976af59eb35cd46b860e68558dbc (HEAD -> main)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:29:45 2025 +0300
+
+    Changed made in the main branch
+
+commit bb303b80052e7e3265da94836061f87b19236be0
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:48:47 2025 +0300
+
+    Second commit
+
+commit a537d89b626484d3bab80d62493021e85d5df205
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Thu Jun 26 22:25:33 2025 +0300
+
+    First commit
+wavevladimir@MacBook-Air-Vladimir my-project % git merge -m "Merging new-feature into main" new-feature
+Merge made by the 'ort' strategy.
+ feature-file.txt                 | 1 +
+ second-subfolder/fourth-file.txt | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 feature-file.txt
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit b850f454f384e2ae58b20cb476c8c9c897b866d1 (HEAD -> main)
+Merge: 7768aed 558d432
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:35:25 2025 +0300
+
+    Merging new-feature into main
+
+commit 7768aed83c6f976af59eb35cd46b860e68558dbc
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:29:45 2025 +0300
+
+    Changed made in the main branch
+
+commit 558d43247a54e106c8ffbe41d6a3b43cca31fa8b (new-feature)
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:07:00 2025 +0300
+
+    Modified in the feature branch
+
+commit 86de9703912473510d8689fb7a550c9b98b57986
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 18:51:25 2025 +0300
+
+wavevladimir@MacBook-Air-Vladimir my-project % git cat-file -t b850f454f384e
+commit
+wavevladimir@MacBook-Air-Vladimir my-project % git cat-file -p b850f454f384e
+tree c0d649d603bc690df0ba73d0957488d6b05081f6
+parent 7768aed83c6f976af59eb35cd46b860e68558dbc
+parent 558d43247a54e106c8ffbe41d6a3b43cca31fa8b
+author Wavevladimir <vikirov43@mail.ru> 1751214925 +0300
+committer Wavevladimir <vikirov43@mail.ru> 1751214925 +0300
+
+Merging new-feature into main
+wavevladimir@MacBook-Air-Vladimir my-project % git branch -d new-feature
+Deleted branch new-feature (was 558d432).
+wavevladimir@MacBook-Air-Vladimir my-project % git branch 
+* main
+wavevladimir@MacBook-Air-Vladimir my-project % git log
+commit b850f454f384e2ae58b20cb476c8c9c897b866d1 (HEAD -> main)
+Merge: 7768aed 558d432
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:35:25 2025 +0300
+
+    Merging new-feature into main
+
+commit 7768aed83c6f976af59eb35cd46b860e68558dbc
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:29:45 2025 +0300
+
+    Changed made in the main branch
+
+commit 558d43247a54e106c8ffbe41d6a3b43cca31fa8b
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 19:07:00 2025 +0300
+
+    Modified in the feature branch
+
+commit 86de9703912473510d8689fb7a550c9b98b57986
+Author: Wavevladimir <vikirov43@mail.ru>
+Date:   Sun Jun 29 18:51:25 2025 +0300
+
+:
