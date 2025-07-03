@@ -58,3 +58,25 @@ To https://github.com/Wavevladimir/my-project.git
 branch 'main' set up to track 'origin/main'.
 wavevladimir@MacBook-Air-Vladimir my-project % 
 wavevladimir@MacBook-Air-Vladimir my-project % 
+
+скачивание обновлений с гитхаб
+
+wavevladimir@MacBook-Air-Vladimir my-project % git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.02 KiB | 260.00 KiB/s, done.
+From https://github.com/Wavevladimir/my-project
+   b850f45..e1f629d  main       -> origin/main
+Updating b850f45..e1f629d
+Fast-forward
+ github-file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 github-file.txt
+wavevladimir@MacBook-Air-Vladimir my-project % ls
+feature-file.txt	github-file.txt
+first-subfolder		second-subfolder
+wavevladimir@MacBook-Air-Vladimir my-project %  code .
+wavevladimir@MacBook-Air-Vladimir my-project % 
+
