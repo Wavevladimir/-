@@ -1,24 +1,9 @@
-my_list = [True, 10, 'abc', {}]
-for elem in my_list:
-    print(elem)
-    
-my_object = {
-    'x': 10,
-    'y': 20,
-    'z': 30
-}
+def dict_to_list(dict_to_convert):
+    list_for_convertion = []
+    for k, v in dict_to_convert.items():
+        if type(v) == int:
+            v *= 2
+        list_for_convertion.append((k, v))
+    return list_for_convertion
 
-for key in my_object:
-    print(key, my_object[key])
-    
-for el in [1, 'abc', True]:
-    print(type(el))
-    print(el)
-    
-my_obj = {
-    'q': 10,
-    'w': 20
-}
-for item in my_obj.items():
-    key, value = item
-    print(key, value)
+print(dict_to_list({'a': 5, 'b': [], 'c': 100}))
