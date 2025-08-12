@@ -10,3 +10,11 @@ const objectA = {
 const copyOfA = objectA
 copyOfA.a = 20
 copyOfA.c = 'abc'
+
+const a = () => {
+    console.log('Hey there')
+}
+
+a()
+
+a = 10
