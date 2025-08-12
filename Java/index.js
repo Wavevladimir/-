@@ -1,9 +1,12 @@
-let myName
+const myName = 'Vova'
 
 console.log(myName)
 
-myName = 'Vova'
+const objectA = {
+    a: 10,
+    b: true
+}
 
-console.log(myName)
-
-console.log(console.log(10))
+const copyOfA = objectA
+copyOfA.a = 20
+copyOfA.c = 'abc'
