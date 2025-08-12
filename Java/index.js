@@ -15,6 +15,15 @@ const a = () => {
     console.log('Hey there')
 }
 
-a()
 
-a = 10
+const myCity = {
+    city: 'New York'
+}
+myCity.popular = true
+console.log(myCity)
+
+myCity.country = 'USA'
+console.log(myCity)
+
+delete myCity.country
+console.log(myCity)
