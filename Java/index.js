@@ -27,3 +27,27 @@ console.log(myCity)
 
 delete myCity.country
 console.log(myCity)
+
+const myCity = {
+    city: 'New York',
+    info: {
+        isPopular: true,
+        country: 'USA'
+    }
+}
+
+console.log(myCity.info.isPopular)
+
+delete myCity.info['isPopular']
+
+console.log(myCity)
+
+const nam = 'Vova'
+
+const postsQty = 23
+
+const userProfile = {
+    name: nam,
+    postsQty: postsQty,
+    hasSignedAgreement: false
+}
