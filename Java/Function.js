@@ -24,3 +24,16 @@ myFn(10, 3)
 
 function myFn() { }
 myFn() // undefined
+
+const personOne = {
+    name: 'Bob',
+    age: 21
+}
+
+function increasePersonAge(person) {
+    person.age += 1
+    return person
+}
+
+increasePersonAge(personOne)
+console.log(personOne.age)
