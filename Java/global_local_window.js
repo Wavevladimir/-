@@ -38,3 +38,13 @@ myFn()
 
 console.log(a)//true
 console.log(b)//undefiend
+
+'use strict'//строгий режим 
+
+function myFn() {
+    a = true//Error: a is not defiend at myFn
+    console.log(a)
+}
+
+myFn()
+console.log(a)
